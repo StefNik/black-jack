@@ -27,4 +27,7 @@ class Card:
         return self.suit
 
     def show(self):
-        print("The card is: {}{}{}".format(self.number,self.suit,self.color))
+        print(self.to_string())
+
+    def to_string(self):
+        return "The card is: {}{}{}".format(self.number,self.suit,self.color)
