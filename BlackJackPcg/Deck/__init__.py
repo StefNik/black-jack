@@ -24,3 +24,6 @@ class Deck:
     def print_deck(self):
         for card in self.deck:
             card.show()
+
+    def get_n_cards(self, num_of_cards):
+        pass
