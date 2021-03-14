@@ -1,16 +1,18 @@
-
-from BlackJackPcg.Deck import Deck
-
-
-class Player:
-    pass
+from BlackJackPcg.Game import Game
+from BlackJackPcg.Person.Dealer import Dealer
+from BlackJackPcg.Person.Player import Player
 
 
 if __name__ == '__main__':
-    d = Deck()
-    d.init_deck()
-    d.print_deck()
-    print()
-    d.suffle_deck()
-    d.print_deck()
-    print()
+    delear = Dealer()
+    player1 = Player("user1")
+
+    game = Game([player1], delear)
+
+    game.initalize_deck()
+    game.shuffle_deck()
+    game.give_first_hand_to_participants()
+
+
+
+
